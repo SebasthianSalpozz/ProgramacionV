@@ -84,4 +84,3 @@ faultyChannel = tail
 altMap :: (a -> b) -> (a -> b) -> [a] -> [b]
 altMap f g = map (\(x, y) -> if even x then f y else g y) . zip [0..]
 
-

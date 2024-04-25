@@ -1,6 +1,8 @@
-module ROmanCal where
+module Main where
 import Distribution.Simple.Command (OptDescr(BoolOpt))
 import Text.Read (Lexeme(String))
+import Text.Parsec (string)
+import Distribution.ModuleName (main)
 
 roman :: [(String,Int)]
 roman = [("I",1),("IV", 4),("V",5),("IX", 9),("X",10),("XL", 40),("L",50),("XC", 90),("C",100),("CD", 400),("D",500),("CM", 900),("M",1000)]
@@ -8,19 +10,17 @@ roman = [("I",1),("IV", 4),("V",5),("IX", 9),("X",10),("XL", 40),("L",50),("XC",
 expr :: [(String , Int -> Int -> Int )]
 expr = [("+", (+)), ("-",(-)), ("*",(*)), ("/", div ), ("%", mod)]
 
-calRoman :: String -> String 
+calRoman :: String -> String
 calRoman input = result $ words input
+        where 
+            result :: [String] -> String
+            result (x:y:z:xs) = case y of
+                                "+" -> numberToRoman ( romanToNumber x + romanToNumber z ) 
+                                "-" -> numberToRoman ( romanToNumber x - romanToNumber z )
+                                "*" -> numberToRoman ( romanToNumber x * romanToNumber z )
+                                ":" -> numberToRoman ( romanToNumber x `div` romanToNumber z )
+                                "%"  -> numberToRoman ( romanToNumber x `mod` romanToNumber z )  
 
-            where 
-                result :: [String] -> String
-                result (x:y:z:xs) = operatorToRoman y (romanToNumber x) (romanToNumber z) ++ result xs
-
-                operatorToRoman :: String -> Int -> Int -> String
-                operatorToRoman "+" x z = numberToRoman (x + z)
-                operatorToRoman "-" x z = numberToRoman (x - z)
-                operatorToRoman "*" x z = numberToRoman (x * z)
-                operatorToRoman "/" x z = numberToRoman (x `div` z)
-                operatorToRoman "%" x z = numberToRoman (x `mod` z)
 
 romanToNumber :: String -> Int
 romanToNumber [] = 0
@@ -46,3 +46,9 @@ numberToRoman n = getRoman n ++ numberToRoman (n-getNumber(getRoman n))
                     
 
 
+-- main :: IO ()
+-- main = do strings <- getContents
+--           mapM_ putStrLn $  map calRoman $ lines strings
+
+main :: IO ()
+main = mapM_ putStrLn . map calRoman . lines =<< getContents
