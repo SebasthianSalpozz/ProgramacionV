@@ -153,8 +153,6 @@ markdownBlockToHtml (Code text) = "    <pre><code>" ++ unlines text ++ "</code><
 
 slideToHtml :: Slide -> String
 slideToHtml (Slide background title body) =
-    -- <div class="slide" style="background-image: url('https://img.freepik.com/foto-gratis/hojas-carton-rosa-espacio-copia_23-2148320391.jpg?t=st=1713992248~exp=1713995848~hmac=9c3d456897c05580989415ba92259b46a23b313d90dd71cd132c48ccb32490c1&w=1380');;">
-
     backgroundToHtml background ++
     titleToHtml title ++"\n"++
     "<div style=\"text-align: left;\">\n" ++

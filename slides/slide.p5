@@ -1,61 +1,123 @@
-· https://img.freepik.com/foto-gratis/hojas-carton-rosa-espacio-copia_23-2148320391.jpg?t=st=1713992248~exp=1713995848~hmac=9c3d456897c05580989415ba92259b46a23b313d90dd71cd132c48ccb32490c1&w=1380
-! Arquitectura del CPU
+· https://img.freepik.com/fotos-premium/interior-arquitectonico-blanco-abstracto-serie-cubos-blancos-grandes-ventanales-3d_689904-57991.jpg?w=1480
+! Proyecto de Programacion V
 {
-## Que es CPU
-Central Processing Units CPU serve as the brains of computers, executing instructions and performing calculations to enable various computing 
-** https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-xWHIn2GqwRHfZx5CuuGqgPkU9x9JxuQDI0fB8c27g&s
-## Partes de la Arquitectura del CPU 
-+ Control Unit CU
-+ Arithmetic Logic Unit ALU
-+ Registers
-+ Cache Memory
-+ Instruction Pipeline
-+Clock
+$$$ Nombre
+$$ Sebasthian Salinas
+## Cual es el objetivo de este Proyecto
+El objetivo es definir nuestra propia gramatica para poder al final entregar como producto final un html donde se pueda visualizar este en un formato de presentacion
+## Gramatica que estamos manejando 
++ Headers
++ Letra en Negrilla 
++ Letra Italica
++ Imagenes mediante Link 
++ Listas 
++ Codigo 
++ Background
+** https://i.pinimg.com/564x/ee/12/a9/ee12a906d097550141060360ccc54fd2.jpg
 }
-
 ---
-· https://img.freepik.com/foto-gratis/hojas-carton-rosa-espacio-copia_23-2148320391.jpg?t=st=1713992248~exp=1713995848~hmac=9c3d456897c05580989415ba92259b46a23b313d90dd71cd132c48ccb32490c1&w=1380
-! Este es un titulo
+
+· https://img.freepik.com/foto-gratis/fondo-3d-cubos-blancos_23-2150473002.jpg?t=st=1714081077~exp=1714084677~hmac=08d565e45031ff3cc6536b777589f41febbc54a6c3a4d3d73c55428e07f95eb0&w=1380
+! Headers
 {
-# Hola
-## A
-### asd
-asdasdasd 
-asdasdasdasd
-Spacedas
-das
-dasasd
-$ Negrilla
+###  El simbolo que estamos usando para definir este es el almuadilla o hashtag y a medida que mas pongas aumentara el valor del header del 1 al 6
+## Como definimos nuestra gramatica Abstracta ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714083108/Imagen1_civ1er.png
+
+## Como manejamos en el parser los headers ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714084123/parser_ma20py.png
+
+## Como generamos estos headers en el html? 
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714084128/HTml_hs_e2bnnl.png
+
+$$$ Ejemplos 
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+}
+---
+
+· https://img.freepik.com/vector-gratis/fondo-abstracto-blanco-estilo-papel-3d_23-2148410996.jpg?t=st=1714081269~exp=1714084869~hmac=31ca65d442c19883a4d497dadee712118d106d91c784e42a9cf2e3f7a2e13036&w=1380
+! Letra negrilla e Italica
+{
+
+###  El simbolo que estamos usando para definir este es el dolar y dependiendo la cantidad de estos se va mostrar con 1 va ser negrilla con 2 va ser Italica y con 3 va ser Bold e Italica
+## Como definimos nuestra gramatica Abstracta ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714084701/Bold_1_c4zo6b.png
+
+## Como manejamos en el parser los negrilla e Italica ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714084713/Bold_2_exhvy3.png
+
+## Como generamos estos negrilla e Italica en el html? 
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714084717/Bold_e_Italica_kisbv3.png
+
+### Ejemplos 
+$ Negrilla 
 $$ Italica
 $$$ Bold e Italica 
-** https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-sentado-concepto-icono-naturaleza-animal-aislado-premium-vector-estilo-dibujos-animados-plana_138676-4148.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1713830400&semt=sph
-** https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtIm29bH6cUJ-hX8GTFsstIfRQZle8kWw9CQjN9WPFg&s
 }
-
 ---
-· https://img.freepik.com/vector-gratis/fondo-minimalista-geometrico-azul_53876-99573.jpg?t=st=1713992234~exp=1713995834~hmac=6be3566475c06b5097c1b52f49c5e0fb35b7216610e77573502817536d16bd0a&w=1380
-! Este es un titulo 2
+
+· https://img.freepik.com/foto-gratis/fondo-3d-cubos-blancos_23-2150473002.jpg?t=st=1714081077~exp=1714084677~hmac=08d565e45031ff3cc6536b777589f41febbc54a6c3a4d3d73c55428e07f95eb0&w=1380
+! Imagenes 
 {
-# Hola
-#### acumulando
-##### F
-###### W
-#### acumulando
-##### F
-###### W#### acumulando
-##### F
-###### W
-## dkekd
-### S
-+ a
-+ b
-+ c
+###  El simbolo que estamos usando para definir este son 2 asteriscos y a medida que mas pongas aumentara el valor del header del 1 al 6
+## Como definimos nuestra gramatica Abstracta ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714085244/Imagen_2_hfzuqz.png
 
-<
-   int a = 5
-   int b = 6
-   suma = a-b
->
+## Como manejamos en el parser los Imagenes ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714085239/Imagenes_hb0rhy.png
 
+## Como generamos estos Imagenes en el html? 
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714085251/Imagen3_rrzkgc.png
+
+$$$ Ejemplo 
+** https://i.pinimg.com/1200x/3e/6c/21/3e6c21a4df186f169439f30c46c5a2dc.jpg
 }
---- 
+---
+· https://img.freepik.com/vector-gratis/fondo-abstracto-blanco-estilo-papel-3d_23-2148410996.jpg?t=st=1714081269~exp=1714084869~hmac=31ca65d442c19883a4d497dadee712118d106d91c784e42a9cf2e3f7a2e13036&w=1380
+! Codigo
+{
+
+###  El simbolo que estamos usando para definir que es codigo es menor que para abrir y meter dentro el codigo y mayor que para cerrarlo 
+## Como definimos nuestra gramatica Abstracta ?
+**  https://res.cloudinary.com/dq75yi9su/image/upload/v1714085899/Captura_desde_2024-04-25_18-56-06_rnzv3d.png
+
+## Como manejamos en el parser los Codigo ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086599/Captura_desde_2024-04-25_19-09-41_t9czvg.png
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086064/Captura_desde_2024-04-25_19-00-48_qet0qc.png
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086127/Captura_desde_2024-04-25_19-01-47_a4fro8.png
+## Como generamos estos Codigo en el html? 
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714085909/Captura_desde_2024-04-25_18-56-43_ehusme.png
+
+### Ejemplos 
+<
+num1 = int
+num2 = int
+
+suma = num1 + num2
+>
+}
+---
+
+· https://img.freepik.com/vector-gratis/onda-diseno-abstracto-moderno-degradado-fondo-blanco_343694-2337.jpg?t=st=1714086415~exp=1714090015~hmac=d20b87b85e0c2c1ed8c12b19c5d34a5b9f9d8c4986fa63096149b1cbd6d20434&w=1380
+! Background o Fondo
+{
+###  El simbolo que estamos utilizando para este es un punto medio 
+## Como definimos nuestra gramatica Abstracta ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086528/Captura_desde_2024-04-25_19-08-28_bvmadp.png
+
+## Como manejamos en el parser el Background ?
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086570/Captura_desde_2024-04-25_19-09-17_u9dnsu.png
+
+## Como generamos estos Background en el html? 
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086674/Captura_desde_2024-04-25_19-10-56_qk8ug0.png
+** https://res.cloudinary.com/dq75yi9su/image/upload/v1714086709/Captura_desde_2024-04-25_19-11-36_xv4kwv.png
+
+$$$ Ejemplo 
+## Esta en el fondo
+}
+---

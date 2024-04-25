@@ -15,3 +15,4 @@ histoString (x:xs) = show x ++ x ++ histoString xs
 
 cadena = "12\n12\n"
 --putString("\n")
+ 
