@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Diapositivas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .slide {
+            display: none; /* Ocultar todas las diapositivas por defecto */
+            padding: 20px;
+            text-align: center;
+        }
+        .slide.active {
+            display: block; /* Mostrar la diapositiva activa */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slide active">
+    <h1>Primera Diapositiva</h1>
+    <p>Contenido de la primera diapositiva.</p>
+</div>
+
+<div class="slide">
+    <h1>Segunda Diapositiva</h1>
+    <p>Contenido de la segunda diapositiva.</p>
+</div>
+
+<div class="slide">
+    <h1>Tercera Diapositiva</h1>
+    <p>Contenido de la tercera diapositiva.</p>
+</div>
+
+<div style="text-align:center;">
+    <button onclick="prevSlide()">Anterior</button>
+    <button onclick="nextSlide()">Siguiente</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        // Ocultar todas las diapositivas
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        // Mostrar la diapositiva actual
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0; // Volver al principio al llegar al final
+        }
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1; // Ir al final al retroceder desde el principio
+        }
+        showSlide(currentSlide);
+    }
+
+    // Mostrar la primera diapositiva al cargar la página
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>
